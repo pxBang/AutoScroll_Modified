@@ -1,0 +1,35 @@
+{
+   "action": {
+      "default_icon": {
+         "128": "images/icon128.png",
+         "16": "images/icon16.png",
+         "48": "images/icon48.png"
+      },
+      "default_popup": "popup.html"
+   },
+   "background": {
+      "service_worker": "background.js"
+   },
+   "content_scripts": [ {
+      "js": [ "content.js" ],
+      "matches": [ "\u003Call_urls>" ]
+   } ],
+   "default_locale": "en",
+   "description": "__MSG_shortDesc__",
+   "icons": {
+      "128": "images/icon128.png",
+      "16": "images/icon16.png",
+      "32": "images/icon32.png",
+      "48": "images/icon48.png"
+   },
+   "key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAt542JZAZbs8dECHHCZPPfmenEI/TVk0IebiVtqFn3aoKhO8lIyLB+IBhG/VfZdIrnTEZS4jmb2VFh21GeI+hedmjDzSb+FDZu1RDhJUo7SwqYY2WWPJb36sHpT84j4hdzB0DLYZUdO9XlkOoRgcIaRH99V+R9qYH7RVU1vKODq9KnBGgXJzHCZsmoxIcbPAP7kvzOdUIyyyzI+inT9YnXIOeKjC9dS+gw0OJ7K6wHGdTEkU+nM2t+yPEypbd9GxWucsVhQ0wpp+eciS7FDEQR/q/THOrdG5l5iU/71YkT9DnjjLM3aRa9iUG0vTrSkCzz7G4rP1llXkNttFeXPZMEwIDAQAB",
+   "manifest_version": 3,
+   "name": "__MSG_appName__",
+   "permissions": [ "storage", "activeTab" ],
+   "update_url": "https://clients2.google.com/service/update2/crx",
+   "version": "1.0.2",
+   "web_accessible_resources": [ {
+      "matches": [ "\u003Call_urls>" ],
+      "resources": [ "lib/amplitude.js", "lib/amplitude.umd.min.js" ]
+   } ]
+}
